@@ -1,0 +1,6 @@
+fastai
+gradio
+pillow
+# Only needed if you re-run the notebook end to end:
+icrawler
+jupyter
