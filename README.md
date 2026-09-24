@@ -86,7 +86,7 @@ pip install -r requirements.txt
 **Run the Gradio app**
 
 ```bash
-python eye_app.py
+python app.py
 ```
 
 **Predict from Python**
@@ -124,14 +124,15 @@ The project is motivated by point-of-care screening: a handheld fundus camera th
 
 ```text
 Eye-Disease-Detection-DL/
-├── assets/                  # README images
+├── images/                  # README images
 ├── dataset/                 # Labelled retinal images (one folder per class)
 ├── dataset.zip
 ├── eye-desease.ipynb        # Training and evaluation notebook
-├── eye_app.py               # Gradio inference app
+├── app.py                   # Gradio inference app
 ├── eye_disease_model.pkl    # Exported fastai model
-├── MODEL_CARD.md
+├── model_card.json
 ├── requirements.txt
+├── output.png
 └── README.md
 ```
 
