@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/device-front-and-screen.png" alt="Handheld fundus camera concept, front and rear views" width="100%">
+<img src="images/1.png" alt="Handheld fundus camera concept, front and rear views" width="100%">
 
 # Eye Disease Detection using Deep Learning
 
@@ -34,7 +34,7 @@ Labelled retinal images organised in one folder per class, included in this repo
 | `normal` | No disease |
 
 <div align="center">
-<img src="assets/dataset-samples.png" alt="Sample batch of labelled retinal images" width="75%">
+<img src="output.png" alt="Sample batch of labelled retinal images" width="75%">
 <br><sub>Random training batch (resized to 192 x 192). Image quality, field of view and colour vary considerably.</sub>
 </div>
 
@@ -108,14 +108,10 @@ for label, p in zip(learn.dls.vocab, probs):
 The project is motivated by point-of-care screening: a handheld fundus camera that captures the retina and runs a classifier on the device. The renders below are concept illustrations only, not an existing product.
 
 <div align="center">
-<img src="assets/device-side-views.png" alt="Concept render of a handheld fundus camera, angled and side views" width="100%">
+<img src="images/2.png" alt="Concept render of a handheld fundus camera, angled and side views" width="100%">
 <br><br>
-<img src="assets/device-multi-angle.png" alt="Concept render of the handheld device from multiple angles" width="100%">
+<img src="images/3.png" alt="Concept render of the handheld device from multiple angles" width="100%">
 </div>
-
-## Model Card
-
-Intended use, training data, evaluation and limitations are documented in [MODEL_CARD.md](MODEL_CARD.md).
 
 ## Limitations
 
