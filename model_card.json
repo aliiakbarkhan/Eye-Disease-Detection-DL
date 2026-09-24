@@ -1,0 +1,67 @@
+{
+  "created": "2026-09-23T05:10:26.267655",
+  "architecture": "resnet34 (fastai vision_learner, fine_tune)",
+  "classes": [
+    "cataract",
+    "diabetic_retinopathy",
+    "glaucoma",
+    "normal"
+  ],
+  "dataset_counts_raw": {
+    "cataract": 1038,
+    "diabetic_retinopathy": 1098,
+    "glaucoma": 1007,
+    "normal": 1074
+  },
+  "dataset_counts_after_cleanup": {
+    "cataract": 1038,
+    "diabetic_retinopathy": 1098,
+    "glaucoma": 1007,
+    "normal": 1074
+  },
+  "split_sizes": {
+    "train": 2951,
+    "valid": 633,
+    "test": 633
+  },
+  "test_set_metrics": {
+    "cataract": {
+      "precision": 0.9662162162162162,
+      "recall": 0.9166666666666666,
+      "f1-score": 0.9407894736842105,
+      "support": 156.0
+    },
+    "diabetic_retinopathy": {
+      "precision": 0.9702380952380952,
+      "recall": 0.9878787878787879,
+      "f1-score": 0.978978978978979,
+      "support": 165.0
+    },
+    "glaucoma": {
+      "precision": 0.8506493506493507,
+      "recall": 0.8675496688741722,
+      "f1-score": 0.8590163934426229,
+      "support": 151.0
+    },
+    "normal": {
+      "precision": 0.8773006134969326,
+      "recall": 0.8881987577639752,
+      "f1-score": 0.8827160493827161,
+      "support": 161.0
+    },
+    "accuracy": 0.9162717219589257,
+    "macro avg": {
+      "precision": 0.9161010689001488,
+      "recall": 0.9150734702959005,
+      "f1-score": 0.9153752238721321,
+      "support": 633.0
+    },
+    "weighted avg": {
+      "precision": 0.917081305158094,
+      "recall": 0.9162717219589257,
+      "f1-score": 0.9164667437388969,
+      "support": 633.0
+    }
+  },
+  "notes": "Held-out test set was separated before any training/tuning and never used for model selection."
+}
