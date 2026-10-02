@@ -31,7 +31,7 @@ Today, screening usually means travelling to a hospital and waiting for a specia
 
 | Today: the hospital queue | With our device: screening at home |
 |:---:|:---:|
-| <img src="images/impact-before.png" alt="Crowd of people waiting in a hospital" width="100%"> | <img src="images/impact-after.png" alt="A son screening his mother's eyes using the handheld device" width="100%"> |
+| <img src="https://github.com/aliiakbarkhan/Eye-Disease-Detection-DL/blob/main/images/Crowded%20Indian%20Hospital%20Immunization%20Waiting%20Room.png" alt="Crowd of people waiting in a hospital" width="100%"> | <img src="https://github.com/aliiakbarkhan/Eye-Disease-Detection-DL/blob/main/images/Home%20Eye%20Screening%20with%20Retinal%20Scanner.png" alt="A son screening his mother's eyes using the handheld device" width="100%"> |
 
 </div>
 
@@ -44,6 +44,7 @@ Today, screening usually means travelling to a hospital and waiting for a specia
 - **Right:** Elderly people, who are most at risk, can be checked comfortably at home with a relative's help.
 
 > These images show the intended use case. The device is a concept and the model has not been clinically validated (see [Limitations](#limitations)), so it supports early awareness and referral, not diagnosis.
+> Image on left is property of shutterstock.com
 
 ## Cause
 
@@ -51,7 +52,7 @@ Eye disease is rising mainly because the world's population is growing and agein
 
 <div align="center">
 
-<img src="images/eye_disease_rise.png" alt="Bar charts of projected rise in vision impairment worldwide and from age-related macular degeneration" width="90%">
+<img src="https://github.com/aliiakbarkhan/Eye-Disease-Detection-DL/blob/main/images/eye_disease_rise.png" alt="Bar charts of projected rise in vision impairment worldwide and from age-related macular degeneration" width="90%">
 <br><sub>Chart built from the published figures cited below. Only the reported endpoints are plotted; nothing is interpolated.</sub>
 
 </div>
