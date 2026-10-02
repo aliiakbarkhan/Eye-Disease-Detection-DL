@@ -23,6 +23,65 @@ Cataract, glaucoma and diabetic retinopathy are major causes of preventable visi
 
 > **Disclaimer:** This is a research and learning project, not a medical device. Its output must not be used for diagnosis or treatment decisions.
 
+## Impact
+
+Today, screening usually means travelling to a hospital and waiting for a specialist. The goal of this project is to move the first check closer to the patient.
+
+<div align="center">
+
+| Today: the hospital queue | With our device: screening at home |
+|:---:|:---:|
+| <img src="images/impact-before.png" alt="Crowd of people waiting in a hospital" width="100%"> | <img src="images/impact-after.png" alt="A son screening his mother's eyes using the handheld device" width="100%"> |
+
+</div>
+
+**What's happening in these images**
+
+- **Left:** Large crowds wait for hours in hospital eye departments, where specialists are limited and many people come only after their vision has already worsened.
+- **Left:** Early-stage disease often has no obvious symptoms, so it is easy to miss until the damage is advanced.
+- **Right:** A family member captures a retinal image with the handheld device, with no appointment or travel needed.
+- **Right:** The on-device model returns a likely class and probability within moments, so only people flagged as higher risk need to visit a specialist.
+- **Right:** Elderly people, who are most at risk, can be checked comfortably at home with a relative's help.
+
+> These images show the intended use case. The device is a concept and the model has not been clinically validated (see [Limitations](#limitations)), so it supports early awareness and referral, not diagnosis.
+
+## Cause
+
+Eye disease is rising mainly because the world's population is growing and ageing, and because diabetes and other systemic conditions are becoming more common. The figures below come from published studies and articles.
+
+<div align="center">
+
+<img src="images/eye_disease_rise.png" alt="Bar charts of projected rise in vision impairment worldwide and from age-related macular degeneration" width="90%">
+<br><sub>Chart built from the published figures cited below. Only the reported endpoints are plotted; nothing is interpolated.</sub>
+
+</div>
+
+**Key findings**
+
+- **Global vision impairment:** The Lancet Global Health Commission reports 1.1 billion people with distance vision impairment or uncorrected presbyopia in 2020, rising to 1.8 billion by 2050. It also projects about 895 million people with distance vision impairment by 2050, of whom 61 million would be blind. Population ageing, growth and urbanisation drive this, and most affected people live in low- and middle-income countries.
+- **Preventable in most cases:** The same Commission estimates that over 90% of vision loss has a preventable or treatable cause, which is why early screening matters.
+- **Blindness projections:** An earlier Vision Loss Expert Group analysis projected blindness rising from about 36 million to 115 million by 2050. The Commission's later estimate (61 million blind in 2050) is lower, so projections vary with the model and data used.
+- **Macular degeneration:** A Global Burden of Disease analysis estimates that about 8 million people had vision impairment from age-related macular degeneration in 2021, rising to roughly 21.34 million by 2050.
+- **Share vs. number of people:** The proportion of the world population with visual impairment fell from 4.58% in 1990 to 3.38% in 2015, but the total number of people affected is expected to grow because the population is ageing.
+- **Glaucoma:** *The Ophthalmologist* (March 2026) attributes rising glaucoma prevalence to longer lifespans and better detection of previously missed cases, along with diabetes, hypertension and vascular disease.
+- **Myopia:** Research reported by ScienceDaily (Feb 2026) from SUNY College of Optometry suggests dim indoor light, not only screen time, may be fuelling the rise in nearsightedness.
+- **Diabetic eye disease:** The American Academy of Ophthalmology describes diabetic eye disease as one of the most common causes of preventable blindness.
+
+**Sources**
+
+| # | Source | Link |
+|:-:|---|---|
+| 1 | Burton et al., *The Lancet Global Health Commission on Global Eye Health: vision beyond 2020* (2021) | [Full text](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7966694/) |
+| 2 | Michigan Medicine, news release on the Lancet Commission | [Link](https://www.michiganmedicine.org/news-release/lancet-global-health-vision-loss-could-be-treated-one-billion-people-worldwide) |
+| 3 | Bourne et al., *Magnitude, temporal trends, and projections of the global prevalence of blindness and vision impairment*, Lancet Global Health (2017) | [Full text](https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(17)30293-0/fulltext) |
+| 4 | SEE International, *Global Blindness Projected to Triple by 2050* (summary of the 2017 study) | [Link](https://www.seeintl.org/blog/global-blindness-2050/) |
+| 5 | *Global burden of vision impairment due to age-related macular degeneration, 1990–2021, with forecasts to 2050*, Lancet Global Health | [Full text](https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(25)00143-3/fulltext) |
+| 6 | *Why Glaucoma Prevalence Is Rising*, The Ophthalmologist (March 2026) | [Link](https://theophthalmologist.com/issues/2026/articles/march/why-glaucoma-prevalence-is-rising) |
+| 7 | ScienceDaily, Eye Care News (myopia and indoor light, Feb 2026) | [Link](https://www.sciencedaily.com/news/health_medicine/eye_care/) |
+| 8 | American Academy of Ophthalmology, *11 Things Gen-Z and Millennials Can Do Now to Avoid Blindness Later* (Aug 2025) | [Link](https://www.aao.org/eye-health/tips-prevention/healthy-lifestyle-now-good-vision-later) |
+
+> The numbers above are model-based projections, not counts, and they depend on population trends and how eye-care services develop.
+
 ## Dataset
 
 The model is trained on the [Eye Diseases Classification](https://www.kaggle.com/datasets/gunavenkatdoddi/eye-diseases-classification) dataset from Kaggle: 4,217 labelled retinal images in one folder per class, with no corrupt files found. It is also included in this repository as `dataset/` and `dataset.zip`. Refer to the Kaggle page for the dataset's licence and provenance.
